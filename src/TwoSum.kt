@@ -28,7 +28,7 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
     var result = intArrayOf()
 
     for (i in 0 until nums.size-1) {
-        calcMap.put(target - nums[i], i)
+        calcMap[target - nums[i]] = i
     }
 
     nums.forEachIndexed { index, i ->
